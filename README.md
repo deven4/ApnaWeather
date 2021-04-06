@@ -10,3 +10,4 @@ coordinates :-
 
 
 NOTE :- Google Places API is not integrated as i didn't have the API Key, you can add correct latitude and longitude to get the weather forecast of that location.
+        Although the app take your current device location and show the weather data of the device's location.
