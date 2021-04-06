@@ -7,3 +7,6 @@ coordinates :-
   * Daily forecast for 7 days
   * National weather alerts
   * Hitorical weather data for the previous 5 days
+
+
+NOTE :- Google Places API is not integrated as i didn't have the API Key, you can add correct latitude and longitude to get the weather forecast of that location.
