@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Apna Weather</string>
+    <string name="CURRENT_TEMP">%d°C</string>
+    <string name="FEELS_LIKE_TEMP">Feels like %d°C</string>
+    <string name="MIN_MAX_TEMP">%d°C / %d°C</string>
+    <string name="WIND_SPEED">Wind: %.1f m/s WSW</string>
+    <string name="PRESSURE">Pressure: %d hPa</string>
+    <string name="VISIBILITY">Visibility: %.1f km</string>
+    <string name="HUMIDITY">Humidity: %d%%</string>
+    <string name="UI_INDEX">UI index: %.2f</string>
+    <string name="DEW_POINT">Dew point: %d°C</string>
+    <string name="WEATHER_DESC">%s</string>
+    <string name="HOURLY_TEMP">%d °C</string>
+    <string name="NEXT_DAY">12 am</string>
+    <string name="NEXT_DAY_2">12 AM</string>
+    <string name="FETCHING_LOCATION">Getting location…</string>
+    <string name="CITY_STATE">%s, %s</string>
+    <string name="INFO">Google Places API not integrated, as i didn\'t have the API Key. If correct latitude and longitude has entered it
+            will show you the correct weather of that location.</string>
+</resources>
