@@ -65,14 +65,17 @@ public class DeviceLocation {
     private void getAddressLine(Address address) {
 
         List<String> addressParts = new ArrayList<>();
+        if(address!=null) {
 
-        for (int i = 0; i <= address.getMaxAddressLineIndex(); i++) {
-            addressParts.add(address.getAddressLine(i));
-        }
+            for (int i = 0; i <= address.getMaxAddressLineIndex(); i++) {
+                addressParts.add(address.getAddressLine(i));
+            }
 
-        CurrentLocation currentLocation = new CurrentLocation(address.getLocality(), address.getAdminArea(),
-                address.getLatitude(), address.getLongitude(), TextUtils.join("\n", addressParts));
-        locationListener.onTaskCompleted(currentLocation);
+            CurrentLocation currentLocation = new CurrentLocation(address.getLocality(), address.getAdminArea(),
+                    address.getLatitude(), address.getLongitude(), TextUtils.join("\n", addressParts));
+            locationListener.onTaskCompleted(currentLocation);
+        } else
+            locationListener.onTaskFailed("Not able to get your current location Reason: Address is NULL.");
     }
 
 

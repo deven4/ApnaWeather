@@ -93,5 +93,11 @@ public class SplashScreen extends AppCompatActivity implements DeviceLocation.lo
     @Override
     public void onTaskFailed(String exception) {
         HelperMethods.showToastInCenter(this, exception).setDuration(Toast.LENGTH_LONG);
+        Handler handler = new Handler(getMainLooper());
+        handler.postDelayed(() -> {
+            Intent intent = new Intent(SplashScreen.this, MainActivity.class);
+            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+            startActivity(intent);
+        }, 2000);
     }
 }

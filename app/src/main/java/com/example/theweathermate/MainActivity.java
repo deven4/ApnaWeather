@@ -347,7 +347,13 @@ public class MainActivity extends AppCompatActivity implements ViewTreeObserver.
             double lat = data.getDoubleExtra(SearchActivity.LATITUDE, 0);
             double log = data.getDoubleExtra(SearchActivity.LONGITUDE, 0);
 
-            viewBinder.locationTxt.setText(lat + ", " + log);
+            String city = data.getStringExtra(SearchActivity.CITY);
+            String state = data.getStringExtra(SearchActivity.STATE);
+            if (city != null && state != null)
+                viewBinder.locationTxt.setText(getString(R.string.CITY_STATE, city, state));
+            else
+                viewBinder.locationTxt.setText(lat + ", " + log);
+
             URL_ADDRESS = "https://api.openweathermap.org/data/2.5/onecall?" +
                     "lat=" + lat + "&lon=" + log
                     + "&appid=27963459e042df3c8a7bf504d8c6abe1";
@@ -356,6 +362,7 @@ public class MainActivity extends AppCompatActivity implements ViewTreeObserver.
         }
 
     }
+
 
     @Override
     protected void onStart() {
