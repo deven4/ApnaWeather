@@ -13,7 +13,10 @@ NOTE :- Google Places API is not integrated as i didn't have the API Key, you ca
         Although the app take your current device location and show the weather data of the device's location.
 
 # Snapshots:
-<img src="https://user-images.githubusercontent.com/79134401/114410671-2e276e80-9bc9-11eb-9d7c-564b72ce4d0a.png" width=350>  <img src="https://user-images.githubusercontent.com/79134401/114410784-426b6b80-9bc9-11eb-81a9-9a5b277e986f.png" width=350>
+  * Paint
+<img src="https://user-images.githubusercontent.com/79134401/114410671-2e276e80-9bc9-11eb-9d7c-564b72ce4d0a.png" width=350>  <img src="https://user-images.githubusercontent.com/79134401/114410784-426b6b80-9bc9-11eb-81a9-9a5b277e986f.png" width=350> 
+<img src="https://user-images.githubusercontent.com/79134401/118247870-50125a80-b4c1-11eb-890a-906c4f9f2c32.gif" width=350>
+
 
 
 
