@@ -242,6 +242,7 @@
                         android:layout_height="wrap_content"
                         android:background="@drawable/bottom_sheet_bg"
                         android:elevation="4dp"
+                        android:layout_marginTop="5dp"
                         app:behavior_hideable="false"
                         app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
 
