@@ -7,6 +7,10 @@ coordinates :-
   * Daily forecast for 7 days
   * National weather alerts
   * Hitorical weather data for the previous 5 days
+  
+- MVC Design Pattern used
+- HttpURLConnection was used as HTTP Client to retrieve data from the RESTful API.
+- Layout dynamically changes depending on the screen size of the Android.
 
 
 NOTE :- Google Places API is not integrated as i didn't have the API Key, you can add correct latitude and longitude to get the weather forecast of that location.
